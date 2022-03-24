@@ -1,1 +1,1 @@
-markov is a bitch for creating this godamn thing
+word successor word1 successor word2 successor word3 successor

@@ -26,10 +26,6 @@ class Bag{
   // fuctions to modify the bag
   void insert(const T& item);
   bool remove(const T& item); // returns true if successful, false otherwise
-// copy constructor
-  Bag(const Bag<T>& other);
-
-
  
  private: 
 
@@ -100,7 +96,7 @@ bool Bag<T>::remove(const T& item){
 template <typename T>
 void Bag<T>::Display() const{
   for(int i=0; i< bag_elements.size(); i++){
-    cout<<bag_elements[i]<<" | ";
+    cout<<bag_elements[i]<<"|";
   }
 }
 template <typename T>

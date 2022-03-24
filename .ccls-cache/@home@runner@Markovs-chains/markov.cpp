@@ -1,11 +1,14 @@
 #include "markov.h"
 #include <vector>
+#include "random.h"
+#include "bag.h"
+#include <string>
 using namespace std;
 
 // default constructor, initializes the vector to be empty
 
 MarkovEntries::MarkovEntries(string item){
-   item=Markov;
+   Markov= item;
 }
 int MarkovEntries::size() const{
   return MarkovChains.size();

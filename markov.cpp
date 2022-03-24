@@ -1,11 +1,14 @@
 #include "markov.h"
 #include <vector>
+#include "random.h"
+#include "bag.h"
+#include <string>
 using namespace std;
 
 // default constructor, initializes the vector to be empty
 
 MarkovEntries::MarkovEntries(string item){
-   item=Markov;
+   Markov= item;
 }
 int MarkovEntries::size() const{
   return MarkovChains.size();
@@ -17,7 +20,7 @@ bool MarkovEntries::is_empty() const{
 
 // insert: adds "item" to the bag by adding the new item to the private vector
 
-void MarkovEntries::insert(string successor){
+void MarkovEntries::insert_successor(string successor){
   MarkovChains.insert(successor);
 }
 bool MarkovEntries::ChooseSuccessor(string& choice) {

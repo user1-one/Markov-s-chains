@@ -5,11 +5,9 @@
 #include <iostream>
 #include "random.h"
 #include "bag.h"
+#include <string>
 using namespace std;
 
-
-// "T" is out parameterized type that we're making a bag out of
-// Whenever you see "T", that means "the type of the elements of the bag"
 
 class MarkovEntries{
  public: 
@@ -25,7 +23,7 @@ class MarkovEntries{
   void Display_Successors() const;
   string Get_String() const;
   // 
-  void insert(string successor);
+  void insert_successor(string successor);
   
  private: 
 
